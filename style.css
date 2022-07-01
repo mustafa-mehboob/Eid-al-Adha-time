@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    /* min-height: 100vh; */
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+
+}
+
+#stars>i {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff,
+        0 0 15px #fff,
+        0 0 25px #fff;
+    animation: animate linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.moon {
+    display: flex;
+    justify-content: flex-start;
+    /* margin: 20% 0 0 10%; */
+    /* align-items: center; */
+
+}
+
+.moon img {
+    position: absolute;
+    height: 40%;
+    left: 10%;
+    top: 10%;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    0% {
+        top: 200%;
+    }
+
+    100% {
+        top: 10%;
+    }
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+.heading h1 {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #FFF;
+    font-size: 4vw;
+    animation-name: h1;
+    animation-duration: 6s;
+}
+
+@keyframes h1 {
+    0% {
+        left: 0px;
+        opacity: 0%;
+    }
+    25% {
+        opacity: 0%;
+    }
+
+    100% {
+        left: 40%;
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* Screen width */
+
+@media only screen and (max-width: 580px) {
+    .moon img {
+        height: 30%;
+        left: 7%;
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .moon img {
+        height: 20%;
+        left: 4%;
+        top: 10%;
+    }
+
+    .heading h1 {
+        top: 17%;
+    }
+}
+.data-container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.card {
+    margin: 40% -10% 5% 0%;
+    opacity: 70%;
+
+}
+.card img {
+    margin-left: 30%;
+    width: 40%;
+    color: black;
+}
+.card-body h5{
+    margin-left: 30%;
+    color: #000;
+}
+.card-body p {
+    color: #000;
+}
