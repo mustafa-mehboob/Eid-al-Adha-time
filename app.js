@@ -30,7 +30,7 @@ var time =  new Date().getTime()
 
 // Day One
 
-var dayOneTime =  new Date("9 jul , 2022 19:25:00").getTime()
+var dayOneTime =  new Date("9 jul , 2022 07:00:00").getTime()
 
 var dot = dayOneTime - time
 var dayOne = Math.floor((dot / (1000 * 60 * 60 * 24))  );
@@ -44,7 +44,7 @@ var time =  new Date().getTime()
 document.getElementById("day1").innerHTML = (dayOne + " days " + doh + " hours " + dom + " minutes " + dos + " seconds")
 // Day Two 
 
-var dayOneTime2 =  new Date("10 jul , 2022 19:25:00").getTime()
+var dayOneTime2 =  new Date("10 jul , 2022 05:00:00").getTime()
 
 var dot2 = dayOneTime2 - time
 var daytwo = Math.floor((dot2 / (1000 * 60 * 60 * 24))  );
@@ -56,7 +56,7 @@ document.getElementById("day2").innerHTML = (daytwo + " days " + doh2 + " hours 
 
 // Day Three
 
-var dayOneTime3 =  new Date("11 jul , 2022 19:25:00").getTime()
+var dayOneTime3 =  new Date("11 jul , 2022 05:00:00").getTime()
 
 var dot3 = dayOneTime3 - time
 var daythree = Math.floor((dot3 / (1000 * 60 * 60 * 24))  );
